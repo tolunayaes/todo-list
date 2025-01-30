@@ -1,0 +1,13 @@
+<h1 class="text-3xl font-bold my-6">
+  Add Todo
+</h1>
+<hr class="mb-8 mt-0">
+<div class="flex mb-4 mt-8 items-center">
+  <mat-form-field class="example-full-width">
+    <mat-label>Todo</mat-label>
+    <input matInput [(ngModel)]="newTodo">
+  </mat-form-field>
+  <div>
+    <button class="ml-1" mat-flat-button (click)="createTodo()">Ekle</button>
+  </div>
+</div>
