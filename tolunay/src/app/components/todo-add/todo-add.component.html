@@ -1,0 +1,24 @@
+<div class="flex flex-col p-6 bg-white rounded-lg shadow-lg">
+  <h1 class="text-3xl font-bold text-gray-800 mb-8">Add New Task</h1>
+
+  <div class="flex space-x-4">
+    <mat-form-field class="w-full">
+      <mat-label>New Task</mat-label>
+      <input
+        matInput
+        [(ngModel)]="newTodoTitle"
+        placeholder="Enter your task"
+        (keyup.enter)="addTodo()"
+      />
+    </mat-form-field>
+
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="addTodo()"
+      class="!px-8 !h-[56px]"
+    >
+      Add Task
+    </button>
+  </div>
+</div>

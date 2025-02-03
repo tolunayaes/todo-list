@@ -1,0 +1,30 @@
+<div
+  class="container mx-auto px-4 py-8 max-w-6xl bg-white shadow-lg rounded-lg"
+>
+  <nav class="flex items-center justify-between bg-white p-4 mb-5">
+    <span class="text-xl font-bold text-gray-800">My TODO List</span>
+    <div class="flex space-x-4">
+      <a
+        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors cursor-pointer"
+        routerLink="/add"
+        routerLinkActive="text-red-600 bg-gray-50"
+        >ADD</a
+      >
+      <a
+        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors cursor-pointer"
+        routerLink="/list"
+        routerLinkActive="text-red-600 bg-gray-50"
+        >LIST</a
+      >
+      <a
+        class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-100 transition-colors cursor-pointer"
+        routerLink="/favorite"
+        routerLinkActive="text-red-600 bg-gray-50"
+        >FAVORITE TODO LIST</a
+      >
+    </div>
+  </nav>
+  <div class="content p-4">
+    <router-outlet></router-outlet>
+  </div>
+</div>
